@@ -1,0 +1,36 @@
+{
+  "name": "todoapp-with-react-x-typescript-x-recoil",
+  "version": "1.0.0",
+  "description": "It's the smallest TODO application I've ever built just to touch the Recoil state management library",
+  "keywords": [
+    "react",
+    "todo",
+    "recoil"
+  ],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "lodash": "4.17.15",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0",
+    "recoil": "0.0.8",
+    "uuid": "8.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.19",
+    "@types/react-dom": "16.9.5",
+    "typescript": "3.7.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
