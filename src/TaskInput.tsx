@@ -2,7 +2,7 @@ import * as React from "react";
 import * as Atoms from "./atoms/index";
 import * as uuid from "uuid/";
 import omit from "lodash/omit";
-import { useSetRecoilState, useRecoilState } from "recoil";
+import { useSetRecoilState, useRecoilState, RecoilState } from "recoil";
 
 const Task = () => {
   const [titleState, setTitleState] = React.useState<string>("");
@@ -12,7 +12,8 @@ const Task = () => {
   };
   const registerTask = (_e: React.MouseEvent<HTMLButtonElement>) => {
     if (titleState !== "") {
-      setTask((task: Atoms.Task) => {
+      // TODO
+      setTask((task: any) => {
         const id = uuid.v4();
         return {
           ...task,
@@ -57,7 +58,7 @@ export const TaskList = () => {
         not completed
       </div>
       {/* TODO refactor */}
-      {Object.values<Atoms.Task>(tasks)
+      {Object.values<Atoms.Item>(tasks)
         .filter(e => !e.isCompleted)
         .map(e => (
           <div key={`${e.id}`}>
@@ -75,7 +76,7 @@ export const TaskList = () => {
         completed
       </div>
       {/* TODO refactor */}
-      {Object.values<Atoms.Task>(tasks)
+      {Object.values<Atoms.Item>(tasks)
         .filter(e => e.isCompleted)
         .map(e => (
           <div key={`${e.id}`}>

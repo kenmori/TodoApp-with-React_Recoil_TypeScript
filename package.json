@@ -10,13 +10,16 @@
   "main": "src/index.tsx",
   "dependencies": {
     "lodash": "4.17.19",
+    "@types/recoil": "^0.0.1",
+    "@types/uuid": "^8.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0",
-    "recoil": "0.0.8",
+    "react-scripts": "3.4.3",
+    "recoil": "0.0.12",
     "uuid": "8.1.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.161",
     "@types/react": "16.9.19",
     "@types/react-dom": "16.9.5",
     "typescript": "3.7.5"
