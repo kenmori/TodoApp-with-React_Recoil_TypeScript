@@ -12,12 +12,12 @@ const Task = () => {
   };
   const registerTask = (_e: React.MouseEvent<HTMLButtonElement>) => {
     if (titleState !== "") {
-      // TODO
-      setTask((task: any) => {
+      setTask((task: Atoms.Task) => {
+        console.log(task, "task");
         const id = uuid.v4();
         return {
           ...task,
-          [id]: { id, title: titleState, isComplated: false }
+          [id]: { id, title: titleState, isCompleted: false }
         };
       });
     } else {

@@ -10,6 +10,7 @@ export type Task = {
 };
 
 const initState: Task = {};
+
 export const taskState = atom({
   key: "task",
   default: initState
