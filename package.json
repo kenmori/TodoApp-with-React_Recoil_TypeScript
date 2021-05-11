@@ -9,7 +9,7 @@
   ],
   "main": "src/index.tsx",
   "dependencies": {
-    "lodash": "4.17.19",
+    "lodash": "4.17.21",
     "@types/recoil": "^0.0.1",
     "@types/uuid": "^8.0.0",
     "react": "^16.12.0",
